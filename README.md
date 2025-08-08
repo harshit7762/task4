@@ -7,7 +7,7 @@ Note:Before doing the following steps written below Click Turn Windows features 
 2. Listing Current Firewall Rules.Click Advanced Settings (on left side panel).View Inbound Rules and Outbound Rules for current configuration.
 3.In Inbound Rules, select New Rule (right panel).Choose Port then click Next.Select TCP, enter 23 in Specific local ports then click Next.
 Choose Block the connection then click on Next.Apply to Domain/Private/Public by checking the checkbox then click on next.
-Name the rule here and click Finish.
+Name the rule here like here I had given “Block Telnet Port 23” and click Finish.
 4. Test the Rule
 Attempt to connect via Telnet to localhost 23 or from another machine using Telnet. It should be blocked.By opening command prompt and typing the command"telnet localhost 23".
 After that it will display the message "Connecting To localhost...Could not open connection to the host, on port 23: Connect failed" which means telnet localhost port 23 had been blocked.      
